@@ -1,0 +1,296 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+body{
+	font-family: sans-serif;
+}
+
+.backgr1 {
+	width: 100%;
+	height: 100vh;
+	background: url(img/6.630);
+	background-repeat: 50% 50%;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.content{
+	width: 100%;
+	margin: 4em auto;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: justify;
+}
+
+.logo{
+	position: fixed;
+	float: left;
+	margin: 16px 36px;
+	color: white;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+nav {
+	position: fixed;
+	width: 100%;
+}
+
+nav ul {
+	list-style: none;
+	background: rgba(0,0,0,0);
+	overflow: hidden;
+	color: white;
+	padding: 0;
+	text-align: center;
+	margin: 0;
+	transition: 1s;
+}
+
+
+
+nav ul li {
+	display: inline-block;
+	padding: 20px;
+}
+
+nav ul li a{
+	text-decoration: none;	
+	color: white;
+	font size: 18px;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.img {
+	transition: 0.8s;
+}
+.img:hover {
+	transform: scale(1.05);
+}
+.body1 {
+	position: relative;
+	padding-bottom: 56.25%;
+}
+.shapka {
+	position: fixed;
+	width: 100%;
+}
+.shapka a {
+	color: white;
+	padding: 60px;
+	padding-left: 188px;
+	padding-right: 188px;
+	transition: 0.2s;
+}
+.shapka a:hover {
+	color: black;
+}
+nav.black ul {
+	background: #000;
+}
+.block1{
+	list-style: none;
+	background: rgba(0,0,0,0);
+	overflow: hidden;
+	color: white;
+	padding: 0;
+	text-align: center;
+	margin: 0;
+	transition: 0.2s;
+	height: 100px;
+	color: white;
+	padding-top: 35px;
+}
+.block1:hover {
+	background-color: white;
+	height: 100px;
+	color: black;
+	transform: scale(1.05);
+}
+.body2 {
+	width: 100%;
+	height: auto;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.fixed_bg {
+	height: 100%;
+	width: 100%;
+	background: url(img/1.jpg) center top no-repeat;
+	position: fixed;
+	top: 0;
+	z-index: -2;	
+}
+
+.intro {
+	max-height: 100vh;
+	overflow: hidden;
+	position: relative;
+}
+
+.intro:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+
+	background-color: rgba(0,0,0, .8);
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+.intro_content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 3;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+
+}
+
+.intro_title {
+	margin: 0;
+
+	font-size: 45px;
+	text-align: center;
+}
+
+.text_center {
+	text-align: center;
+}
+
+.h3{
+	text-align: center;
+	color: black;
+	padding-top: 30px;
+	font-weight: bold;
+}
+
+.p1{
+	text-align: center;
+	padding-top: 15px;
+	font-weight: bold;
+}
+
+.block5{
+	height: 310px;
+	width: 100%;
+	background-color: white;
+	
+	transition: 0.2s;
+}
+.block5:hover{
+	background-color: black;
+	transform: scale(1.05);
+}
+.text1{
+	text-align: center;
+	padding-top: 30px;
+	font-weight: bold;
+	color: white;
+}
+
+.block6{
+	text-align: center;
+	background-color: white;
+	color: black;
+	border-radius: 15px;
+}
+
+
+
+.block4{
+	height: 310px;
+	width: 100%;
+	background-color: #aa00ff;
+	
+	transition: 0.2s;
+}
+.block4:hover{
+	background-color: white;
+	transform: scale(1.05);
+}
+
+*, *:before, *:after{
+	box-sizing: border-box;
+}
+figure{
+	width: 100%;
+	height: 380px;
+	background-color: #aa00ff;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	position: relative;
+}
+figure h3{
+	transition: 0.2s;
+	transform: translateY(80px);
+}
+figure p{
+	transition: 0.2s;
+	transform: translateY(-80px);
+	opacity: 0;
+	visibility: hidden;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+figure:before{
+	content: '';
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	bottom: 5%;
+	left: 5%;
+	border-top: solid 2px;
+	border-bottom: solid 2px;
+	transition: 0.2s;
+	transform: scaleX(0);
+}
+
+figure:after{
+	content: '';
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	bottom: 5%;
+	left: 5%;
+	border-right: solid 2px;
+	border-left: solid 2px;
+	transition: 0.2s;
+	transform: scaleY(0);
+}
+figure:hover:before,
+figure:hover:after{
+	transform: scale(1);
+}
+figure:hover h3,
+figure:hover p{
+	transform: translateY(0);
+	opacity: 1;
+	visibility: visible;
+}
